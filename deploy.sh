@@ -16,8 +16,7 @@ git push live production # Step 10
 git checkout master # Step 11
 git stash pop # Applies previously saved stash so you can continue working on changes. Once applied, removes stash
 sleep 10
-ssh justin.vetter@10.84.140.15 <<EOF
+ssh justin.vetter@10.84.140.15
 cd /var/www/microsites/html/build-test/releases
 mkdir $TAG
 cp /var/www/microsites/html/build-test/repo-cache /var/www/microsites/html/build-test/releases/$TAG
-EOF
