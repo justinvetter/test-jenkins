@@ -10,8 +10,8 @@ git checkout master -- .gitignore # Step 5
 mv dist/* .
 rm -rf dist # Step 6
 git add . # Step 7
-git tag v$TAG production # Create tag for production release
 git commit -m "deployed $TAG at $REV" # Step 8
+git tag v$TAG production # Create tag for production release
 git push --all # Step 9
 git push live production # Step 10
 git checkout master # Step 11
